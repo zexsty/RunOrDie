@@ -1,0 +1,2 @@
+E:\Mr. ZiP\Programming\unity game\Catch it\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+E:\Mr. ZiP\Programming\unity game\Catch it\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
