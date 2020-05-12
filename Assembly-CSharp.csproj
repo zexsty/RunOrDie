@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{EF97246A-E899-D692-74FB-0AE8FC0F154B}</ProjectGuid>
+    <ProjectGuid>{A10CE714-096B-28AD-6CAB-106EA2A3E881}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Buttons\PlayButton.cs" />
     <Compile Include="Assets\Scripts\DontDestroy.cs" />
     <Compile Include="Assets\Scripts\FallDown.cs" />
+    <Compile Include="Assets\Scripts\FallDownStone.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\GameSettings.cs" />
     <Compile Include="Assets\Scripts\MenuScore.cs" />
@@ -78,22 +79,21 @@
     <Compile Include="Assets\Scripts\SpawnObject\SpawnBombs.cs" />
     <Compile Include="Assets\Scripts\SpawnObject\SpawnCoins.cs" />
     <Compile Include="Assets\Scripts\SpawnObject\SpawnShield.cs" />
-    <None Include="Assets\Sprites\Dodge or Die\для космоса.txt" />
-    <None Include="Assets\Sprites\Dodge or Die\игровой план.txt" />
+    <Compile Include="Assets\Scripts\SpawnObject\SpawnStone.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/Mr. ZiP/Programming/unity game/Catch it/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/zexst/Documents/GitHub/RunOrDie/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>E:/Mr. ZiP/Programming/unity game/Catch it/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/zexst/Documents/GitHub/RunOrDie/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>E:/Mr. ZiP/Programming/unity game/Catch it/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/zexst/Documents/GitHub/RunOrDie/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/Mr. ZiP/Programming/unity game/Catch it/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/zexst/Documents/GitHub/RunOrDie/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>E:/Mr. ZiP/Programming/unity game/Catch it/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/zexst/Documents/GitHub/RunOrDie/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>E:/Mr. ZiP/Programming/unity game/location/2018.4.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -297,13 +297,13 @@
       <HintPath>E:/Mr. ZiP/Programming/unity game/location/2018.4.0f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>E:/Mr. ZiP/Programming/unity game/Catch it/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/zexst/Documents/GitHub/RunOrDie/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>E:/Mr. ZiP/Programming/unity game/Catch it/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/zexst/Documents/GitHub/RunOrDie/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>E:/Mr. ZiP/Programming/unity game/Catch it/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/zexst/Documents/GitHub/RunOrDie/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>E:/Mr. ZiP/Programming/unity game/location/2018.4.0f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

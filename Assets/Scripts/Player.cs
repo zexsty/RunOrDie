@@ -5,18 +5,18 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
 
-    public static int score;
-    private bool immortal;
-    public GameObject pausePanel;
+    public static int score; // Количество монет
+    private bool immortal; // Аура неуязвимости
+    public GameObject pausePanel; //Панель паузы
 
     public SpriteRenderer aura; // Переменная в которой находится спрайт на щит
-    public Text scoreText;
-    public GameObject PanelLost;
-    public static bool lose = false;
-    public static bool pause;
-    public AudioClip CoinSound;
-    public AudioClip ShieldSound;
-    public GameObject shield;
+    public Text scoreText; // Текст количества монет
+    public GameObject PanelLost; // Панель после смерти игрока
+    public static bool lose = false; // Проигрыш
+    public static bool pause; // Пауза
+    public AudioClip CoinSound; // Звук подбора монеты
+    public AudioClip ShieldSound; // Звук подбора щита
+    public GameObject shield; // объект щита
   
     [SerializeField]
 	float moveSpeed = 5f;

@@ -4,17 +4,11 @@ using UnityEngine;
 
 public class MenuScore : MonoBehaviour
 {
-    private TextMesh _text;
+    private TextMesh _text; // ScoreText
 
     void Start()
     {
         _text = GetComponentInChildren<TextMesh>();
-        _text.text = "Best Score: " + PlayerPrefs.GetInt("LastPoint", 0).ToString();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        _text.text = "Best Score: " + PlayerPrefs.GetInt("LastPoint", 0).ToString(); //Сохранение количества монет после выхода в главное меню
     }
 }
