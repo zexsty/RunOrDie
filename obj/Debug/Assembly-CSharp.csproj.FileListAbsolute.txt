@@ -1,2 +1,4 @@
 E:\Mr. ZiP\Programming\unity game\Catch it\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
 E:\Mr. ZiP\Programming\unity game\Catch it\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\zexst\Documents\GitHub\RunOrDie\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\zexst\Documents\GitHub\RunOrDie\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

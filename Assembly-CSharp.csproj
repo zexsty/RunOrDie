@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\Shop.cs" />
     <Compile Include="Assets\Scripts\SpawnObject\SpawnBombs.cs" />
     <Compile Include="Assets\Scripts\SpawnObject\SpawnCoins.cs" />
+    <Compile Include="Assets\Scripts\SpawnObject\SpawnMagnet.cs" />
     <Compile Include="Assets\Scripts\SpawnObject\SpawnShield.cs" />
     <Compile Include="Assets\Scripts\SpawnObject\SpawnStone.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">

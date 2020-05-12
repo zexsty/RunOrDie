@@ -71,6 +71,11 @@ public class Player : MonoBehaviour {
             StopCoroutine(ShieldTimer()); // Отключен метод который дает неуязвимость
             StartCoroutine(ShieldTimer()); // Подключен метод который дает неуязвимость
         }
+
+        if (other.tag == "Magnet")
+        {
+            Destroy(other.gameObject);
+        }
     }
 
     private IEnumerator ShieldTimer() // Метод дающий неуязвимость во время действия щита
@@ -81,6 +86,11 @@ public class Player : MonoBehaviour {
         immortal = false;
         aura.enabled = immortal;
 
+    }
+
+    private IEnumerator MagnetTimer ()
+    {
+        yield return new WaitForSeconds(20f);
     }
 
     public void SetScoreText()

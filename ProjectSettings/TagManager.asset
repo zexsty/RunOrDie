@@ -9,6 +9,7 @@ TagManager:
   - coin
   - Shield
   - Replay
+  - Magnet
   layers:
   - Default
   - TransparentFX
