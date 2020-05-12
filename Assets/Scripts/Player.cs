@@ -5,10 +5,9 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
 
+    //Public Variable
     public static int score; // Количество монет
-    private bool immortal; // Аура неуязвимости
     public GameObject pausePanel; //Панель паузы
-
     public SpriteRenderer aura; // Переменная в которой находится спрайт на щит
     public Text scoreText; // Текст количества монет
     public GameObject PanelLost; // Панель после смерти игрока
@@ -17,14 +16,17 @@ public class Player : MonoBehaviour {
     public AudioClip CoinSound; // Звук подбора монеты
     public AudioClip ShieldSound; // Звук подбора щита
     public GameObject shield; // объект щита
-  
-    [SerializeField]
-	float moveSpeed = 5f;
 
+    // Private Variable
+    private bool immortal; // Аура неуязвимости
+    public static bool magneto;
+    [SerializeField] float moveSpeed = 5f;
+    
     void Awake()
     {
         lose = false;
         pause = false;
+        magneto = false;
     }
 
     void Start ()
@@ -75,7 +77,16 @@ public class Player : MonoBehaviour {
         if (other.tag == "Magnet")
         {
             Destroy(other.gameObject);
+            StartCoroutine(MagnetTimer());
+            StopCoroutine(MagnetTimer());
         }
+    }
+
+    private IEnumerator MagnetTimer ()
+    {
+        magneto = true;
+        yield return new WaitForSeconds(20f);
+        magneto = false;
     }
 
     private IEnumerator ShieldTimer() // Метод дающий неуязвимость во время действия щита
@@ -88,10 +99,6 @@ public class Player : MonoBehaviour {
 
     }
 
-    private IEnumerator MagnetTimer ()
-    {
-        yield return new WaitForSeconds(20f);
-    }
 
     public void SetScoreText()
     {

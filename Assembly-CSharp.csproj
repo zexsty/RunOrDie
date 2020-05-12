@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Buttons\PlayButton.cs" />
     <Compile Include="Assets\Scripts\DontDestroy.cs" />
     <Compile Include="Assets\Scripts\FallDown.cs" />
+    <Compile Include="Assets\Scripts\FallDownCoints.cs" />
     <Compile Include="Assets\Scripts\FallDownStone.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\GameSettings.cs" />
