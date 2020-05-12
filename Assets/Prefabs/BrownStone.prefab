@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4968528686148697473}
   - component: {fileID: 7627768481058043331}
   - component: {fileID: 5503313434102679894}
+  - component: {fileID: 679285619754506809}
   - component: {fileID: 2803450326436499865}
   m_Layer: 0
   m_Name: BrownStone
@@ -107,6 +108,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.25, y: 5.86}
   m_EdgeRadius: 0
+--- !u!114 &679285619754506809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6631235658638428500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398e2bb22a37f0d46afa4b101afa3247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &2803450326436499865
 Rigidbody2D:
   serializedVersion: 4
