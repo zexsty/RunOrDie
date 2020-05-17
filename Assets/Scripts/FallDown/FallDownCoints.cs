@@ -23,7 +23,7 @@ public class FallDownCoints : MonoBehaviour
  
         if (Player.magneto)
         {
-            transform.position = Vector3.MoveTowards(transform.position, _playerPoint.position, fallSpeed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, _playerPoint.position, fallSpeed * 0.05f);
         }
     }
 }

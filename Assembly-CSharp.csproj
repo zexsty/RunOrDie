@@ -65,9 +65,10 @@
     <Compile Include="Assets\Scripts\Buttons\ButtonsSound.cs" />
     <Compile Include="Assets\Scripts\Buttons\PlayButton.cs" />
     <Compile Include="Assets\Scripts\DontDestroy.cs" />
-    <Compile Include="Assets\Scripts\FallDown.cs" />
-    <Compile Include="Assets\Scripts\FallDownCoints.cs" />
-    <Compile Include="Assets\Scripts\FallDownStone.cs" />
+    <Compile Include="Assets\Scripts\FallDown\FallDown.cs" />
+    <Compile Include="Assets\Scripts\FallDown\FallDownCoints.cs" />
+    <Compile Include="Assets\Scripts\FallDown\FallDownRocket.cs" />
+    <Compile Include="Assets\Scripts\FallDown\FallDownStone.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\GameSettings.cs" />
     <Compile Include="Assets\Scripts\MenuScore.cs" />
@@ -80,6 +81,7 @@
     <Compile Include="Assets\Scripts\SpawnObject\SpawnBombs.cs" />
     <Compile Include="Assets\Scripts\SpawnObject\SpawnCoins.cs" />
     <Compile Include="Assets\Scripts\SpawnObject\SpawnMagnet.cs" />
+    <Compile Include="Assets\Scripts\SpawnObject\SpawnRocket.cs" />
     <Compile Include="Assets\Scripts\SpawnObject\SpawnShield.cs" />
     <Compile Include="Assets\Scripts\SpawnObject\SpawnStone.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">

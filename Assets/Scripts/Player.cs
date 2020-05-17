@@ -16,10 +16,12 @@ public class Player : MonoBehaviour {
     public AudioClip CoinSound; // Звук подбора монеты
     public AudioClip ShieldSound; // Звук подбора щита
     public GameObject shield; // объект щита
-
-    // Private Variable
-    private bool immortal; // Аура неуязвимости
+    public GameObject Lightning;
     public static bool magneto;
+    // Private Variable
+    private static bool rocket;
+    private bool immortal; // Аура неуязвимости
+    private Transform _bombPoint;
     [SerializeField] float moveSpeed = 5f;
     
     void Awake()
@@ -27,6 +29,7 @@ public class Player : MonoBehaviour {
         lose = false;
         pause = false;
         magneto = false;
+        rocket = false;
     }
 
     void Start ()
@@ -35,8 +38,15 @@ public class Player : MonoBehaviour {
         SetScoreText();
         PanelLost.SetActive(false);
     }
+    private void Update()
+    {
+        if (rocket)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, _bombPoint.position, Time.deltaTime * 0.05f);
+        }
+    }
 
-    public void PauseButtonClick()
+public void PauseButtonClick()
     {
         pause =! pause;
         pausePanel.SetActive(pause);
@@ -80,13 +90,30 @@ public class Player : MonoBehaviour {
             StartCoroutine(MagnetTimer());
             StopCoroutine(MagnetTimer());
         }
+
+        //if (other.tag == "Rocket")
+        //{
+            //Destroy(other.gameObject);
+          //  StartCoroutine(RocketShot());
+        //    StopCoroutine(RocketShot());
+      //  }
     }
+
+   // private IEnumerator RocketShot()
+    //{
+      //  rocket = true;
+        //_bombPoint = GameObject.FindGameObjectWithTag("Bomb").GetComponent<Transform>();
+       // yield return new WaitForSeconds(10f);
+       // rocket = false;
+    //}
 
     private IEnumerator MagnetTimer ()
     {
         magneto = true;
+        Lightning.SetActive(magneto);
         yield return new WaitForSeconds(20f);
         magneto = false;
+        Lightning.SetActive(magneto);
     }
 
     private IEnumerator ShieldTimer() // Метод дающий неуязвимость во время действия щита
@@ -98,7 +125,6 @@ public class Player : MonoBehaviour {
         aura.enabled = immortal;
 
     }
-
 
     public void SetScoreText()
     {
