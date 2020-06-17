@@ -5,7 +5,7 @@ using UnityEngine;
 public class FallDownCoints : MonoBehaviour
 {
     [SerializeField]
-    private float fallSpeed = 3f; // Скорость падения объекта
+    private float fallSpeedCoin = 3f; // Скорость падения объекта
 
     private Transform _playerPoint;
 
@@ -19,11 +19,16 @@ public class FallDownCoints : MonoBehaviour
         if (transform.position.y < -6f)// Уничтожение обьекта бомы за границами экрана
             Destroy(gameObject); // Когда объект по координате "Y" -6f то объект будет уничтожен
 
-        transform.position -= new Vector3(0, fallSpeed * Time.deltaTime, 0);// Объект будет лететь только по координате Y
+        transform.position -= new Vector3(0, fallSpeedCoin * Time.deltaTime, 0);// Объект будет лететь только по координате Y
  
-        if (Player.magneto)
+        if (PlayerController.magneto)
         {
-            transform.position = Vector3.MoveTowards(transform.position, _playerPoint.position, fallSpeed * 0.05f);
+            transform.position = Vector3.MoveTowards(transform.position, _playerPoint.position, fallSpeedCoin * 0.05f);
+        }
+
+        if (PlayerController.SwapCoin == true)
+        {
+            fallSpeedCoin = 7f;
         }
     }
 }

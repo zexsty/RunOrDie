@@ -16,7 +16,7 @@ public class MovePlayer : MonoBehaviour
     }
     void Update()
     {
-        if (!Player.lose || Player.pause) // Если игрок не мёртв или не нажата пауза
+        if (!PlayerController.lose || PlayerController.pause) // Если игрок не мёртв или не нажата пауза
         {
             float moveX;
 

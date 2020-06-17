@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3491078254648194176}
   - component: {fileID: 3491078254648194178}
   - component: {fileID: 3491078254648194179}
-  - component: {fileID: 3491078254648194300}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -94,13 +93,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eb07dbed0bee4440bdb035ad3bba7ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pausePanel: {fileID: 0}
   aura: {fileID: 0}
   scoreText: {fileID: 0}
   PanelLost: {fileID: 0}
   CoinSound: {fileID: 8300000, guid: 7e21e19aac6c77d4f86f7aee726429a7, type: 3}
   ShieldSound: {fileID: 0}
   shield: {fileID: 0}
-  moveSpeed: 5
+  Lightning: {fileID: 0}
+  SpawnBombsScript: {fileID: 0}
 --- !u!50 &3491078254648194179
 Rigidbody2D:
   serializedVersion: 4
@@ -122,17 +123,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3491078254648194300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3491078254648194301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba3206389952101408c59b930d9c80fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NextlvlButton: 0
-  panel: {fileID: 0}

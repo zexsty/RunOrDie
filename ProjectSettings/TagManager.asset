@@ -11,6 +11,7 @@ TagManager:
   - Replay
   - Magnet
   - Rocket
+  - Star
   layers:
   - Default
   - TransparentFX

@@ -19,7 +19,7 @@ public class SpawnStone : MonoBehaviour
 
     IEnumerator Spawn() // Метод спавна объектов
     {
-        while (!Player.lose) // Цикл который выполняется пока игрок жив
+        while (!PlayerController.lose) // Цикл который выполняется пока игрок жив
         {
             yield return new WaitForSeconds(Random.Range(10f, 60f)); // Задержка перед спавном объектов
             Instantiate(Stone, new Vector2(Random.Range(-2.85f, 2.85f), 5.521f), Quaternion.identity); // Первое - Это объект который будет спавнится, Второе - это это рандомное положение спавна(Координата от и до)

@@ -61,28 +61,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Explosion.cs" />
-    <Compile Include="Assets\Scripts\Buttons\Buttons.cs" />
-    <Compile Include="Assets\Scripts\Buttons\ButtonsSound.cs" />
-    <Compile Include="Assets\Scripts\Buttons\PlayButton.cs" />
-    <Compile Include="Assets\Scripts\DontDestroy.cs" />
+    <Compile Include="Assets\Scripts\AnswerScript.cs" />
     <Compile Include="Assets\Scripts\FallDown\FallDown.cs" />
     <Compile Include="Assets\Scripts\FallDown\FallDownCoints.cs" />
     <Compile Include="Assets\Scripts\FallDown\FallDownRocket.cs" />
+    <Compile Include="Assets\Scripts\FallDown\FallDownStar.cs" />
     <Compile Include="Assets\Scripts\FallDown\FallDownStone.cs" />
-    <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\GameSettings.cs" />
     <Compile Include="Assets\Scripts\MenuScore.cs" />
     <Compile Include="Assets\Scripts\MovePlayer.cs" />
-    <Compile Include="Assets\Scripts\Panel.cs" />
-    <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Record.cs" />
-    <Compile Include="Assets\Scripts\Restart.cs" />
-    <Compile Include="Assets\Scripts\Shop.cs" />
+    <Compile Include="Assets\Scripts\RocketSpawnShot.cs" />
     <Compile Include="Assets\Scripts\SpawnObject\SpawnBombs.cs" />
     <Compile Include="Assets\Scripts\SpawnObject\SpawnCoins.cs" />
     <Compile Include="Assets\Scripts\SpawnObject\SpawnMagnet.cs" />
     <Compile Include="Assets\Scripts\SpawnObject\SpawnRocket.cs" />
     <Compile Include="Assets\Scripts\SpawnObject\SpawnShield.cs" />
+    <Compile Include="Assets\Scripts\SpawnObject\SpawnStar.cs" />
     <Compile Include="Assets\Scripts\SpawnObject\SpawnStone.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/zexst/Documents/GitHub/RunOrDie/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

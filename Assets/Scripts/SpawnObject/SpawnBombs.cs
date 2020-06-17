@@ -3,8 +3,11 @@ using UnityEngine;
 
 public class SpawnBombs : MonoBehaviour {
 
-	public GameObject bomb;
+    public GameObject bomb;
     public CircleCollider2D BombColl;
+    
+    [SerializeField]
+    private GameObject _coins;
 
     private void Awake()
     {
@@ -12,13 +15,21 @@ public class SpawnBombs : MonoBehaviour {
     }
 
     void Start () {
-		StartCoroutine (Spawn ());
-	}
+        StartCoroutine (Spawn ());
+    }
 
 	IEnumerator Spawn () {
-		while (!Player.lose) {
-			Instantiate (bomb, new Vector2 (Random.Range (-2.85f, 2.85f), 5.521f), Quaternion.identity);
-			yield return new WaitForSeconds (0.8f);
+		while (!PlayerController.lose) {
+            if (PlayerController.SwapCoin == false)
+            {
+                Instantiate(bomb, new Vector2(Random.Range(-3.5f, 3.2f), 5.521f), Quaternion.identity);
+                yield return new WaitForSeconds(0.8f);
+            }
+            else if (PlayerController.SwapCoin == true)
+            {
+                Instantiate(_coins, new Vector2(Random.Range(-2.85f, 2.85f), 5.521f), Quaternion.identity);
+                yield return new WaitForSeconds(0.2f);
+            }
 		}
         
 	}
