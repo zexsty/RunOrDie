@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Record.cs" />
     <Compile Include="Assets\Scripts\RocketSpawnShot.cs" />
+    <Compile Include="Assets\Scripts\RotateAroundPlanet.cs" />
     <Compile Include="Assets\Scripts\SpawnObject\SpawnBombs.cs" />
     <Compile Include="Assets\Scripts\SpawnObject\SpawnCoins.cs" />
     <Compile Include="Assets\Scripts\SpawnObject\SpawnMagnet.cs" />
@@ -80,6 +81,7 @@
     <Compile Include="Assets\Scripts\SpawnObject\SpawnShield.cs" />
     <Compile Include="Assets\Scripts\SpawnObject\SpawnStar.cs" />
     <Compile Include="Assets\Scripts\SpawnObject\SpawnStone.cs" />
+    <Compile Include="Assets\Scripts\SpawnObject\StarsMainFon.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/zexst/Documents/GitHub/RunOrDie/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
