@@ -12,6 +12,8 @@ TagManager:
   - Magnet
   - Rocket
   - Star
+  - Stone
+  - Hat
   layers:
   - Default
   - TransparentFX

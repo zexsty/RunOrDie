@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour {
 
     //Public Variable
     public static int score; // Количество монет
-    public GameObject pausePanel; //Панель паузы
+    public GameObject PausePanel; //Панель паузы
     public SpriteRenderer aura; // Переменная в которой находится спрайт на щит
     public Text scoreText; // Текст количества монет
     public GameObject PanelLost; // Панель после смерти игрока
@@ -37,13 +37,12 @@ public class PlayerController : MonoBehaviour {
         score = 0;
         SetScoreText();
         PanelLost.SetActive(false);
-        SpawnBombs SwapMethod = GetComponent<SpawnBombs>();
     }
 
     public void PauseButtonClick()
     {
         pause = !pause;
-        pausePanel.SetActive(pause);
+        PausePanel.SetActive(pause);
 
     }
 
@@ -93,7 +92,7 @@ public class PlayerController : MonoBehaviour {
     }
     IEnumerator StarTime() {
         SwapCoin = true;
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(6f);
         SwapCoin = false;
 
     }

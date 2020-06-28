@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2803450326436499865}
   m_Layer: 0
   m_Name: BrownStone
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,6 +120,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 398e2bb22a37f0d46afa4b101afa3247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PanelLost: {fileID: 2485496884102205726, guid: 3d263a460d8168b4fbd1a3e83f6ac7aa,
+    type: 3}
+  _player: {fileID: 3491078254648194301, guid: 273273e9d37cbee4d9a95ab3c46053c8, type: 3}
 --- !u!50 &2803450326436499865
 Rigidbody2D:
   serializedVersion: 4
@@ -140,4 +143,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 1
+  m_Constraints: 5
