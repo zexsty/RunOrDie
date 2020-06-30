@@ -68,8 +68,11 @@
     <Compile Include="Assets\Scripts\FallDown\FallDownStar.cs" />
     <Compile Include="Assets\Scripts\FallDown\FallDownStone.cs" />
     <Compile Include="Assets\Scripts\GameSettings.cs" />
+    <Compile Include="Assets\Scripts\HatCollider.cs" />
+    <Compile Include="Assets\Scripts\LoadLevel.cs" />
     <Compile Include="Assets\Scripts\MenuScore.cs" />
     <Compile Include="Assets\Scripts\MovePlayer.cs" />
+    <Compile Include="Assets\Scripts\Pause.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Record.cs" />
     <Compile Include="Assets\Scripts\RocketSpawnShot.cs" />

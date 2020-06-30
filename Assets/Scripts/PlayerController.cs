@@ -89,6 +89,7 @@ public class PlayerController : MonoBehaviour {
             Destroy(other.gameObject);
             StartCoroutine(StarTime());
         }
+
     }
     IEnumerator StarTime() {
         SwapCoin = true;

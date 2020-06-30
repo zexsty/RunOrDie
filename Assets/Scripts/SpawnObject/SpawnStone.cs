@@ -21,7 +21,7 @@ public class SpawnStone : MonoBehaviour
     {
         while (!PlayerController.lose) // Цикл который выполняется пока игрок жив
         {
-            yield return new WaitForSeconds(Random.Range(5f, 6f)); // Задержка перед спавном объектов
+            yield return new WaitForSeconds(Random.Range(30f, 60f)); // Задержка перед спавном объектов
             Instantiate(Stone, new Vector2(Random.Range(-2.85f, 2.85f), 5.521f), Quaternion.identity); // Первое - Это объект который будет спавнится, Второе - это это рандомное положение спавна(Координата от и до)
         }
 

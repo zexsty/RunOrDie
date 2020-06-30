@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class FallDownStone : MonoBehaviour
 {
-    public GameObject PanelLost;
-    [SerializeField] private GameObject _player;
-    private PlayerController _panelLost;
 
     void Update()
     {
@@ -14,13 +11,4 @@ public class FallDownStone : MonoBehaviour
             Destroy(gameObject, 5f);
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag == "Hat")
-        {
-            PanelLost.SetActive(true);
-            PlayerController.lose = true;
-            _player.SetActive(false);
-        }
-    }
 }

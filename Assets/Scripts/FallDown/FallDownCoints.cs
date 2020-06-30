@@ -11,7 +11,10 @@ public class FallDownCoints : MonoBehaviour
 
     void Start()
     {
-        _playerPoint = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        if (!PlayerController.lose)
+        {
+            _playerPoint = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        }
     }
 
     void Update()
