@@ -8,7 +8,7 @@ public class FallDownStone : MonoBehaviour
     void Update()
     {
         if (transform.position.y < 2.0f)// Уничтожение обьекта бомы за границами экрана
-            Destroy(gameObject, 5f);
+            Destroy(gameObject, 55f);
     }
 
 }

@@ -12,7 +12,7 @@ public class SpawnStar : MonoBehaviour
 
     IEnumerator SpawnStarObject() {
         while (!PlayerController.lose) {
-            yield return new WaitForSeconds(Random.Range(60f, 160f));
+            yield return new WaitForSeconds(Random.Range(6f, 10f));
             Instantiate(StarPrefab, new Vector2(Random.Range(-2.85f, 2.85f), 5.521f), Quaternion.identity);
         }
     }

@@ -4,18 +4,23 @@ using UnityEngine;
 
 public class Pause : MonoBehaviour
 {
-    private bool paused = false;
-    [SerializeField] private GameObject _pauseMenu;
+    private bool _isPause;
+    [SerializeField] private Animator _pauseAnim;
 
-    public void PauseTime()
+    public void OnPause()
     {
-            Time.timeScale = 0;
-        paused = true;
+        _isPause = true;
+         Time.timeScale = 0;
     }
 
-    public void EndPause ()
+    public void EndPause()
     {
-            Time.timeScale = 1;
-        paused = false;
+        _isPause = false;
+        Time.timeScale = 1;
     }
+
+   public void StartAnim()
+    {
+       _pauseAnim.SetTrigger("Numbers");
+    }   
 }

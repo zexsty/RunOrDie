@@ -61,9 +61,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Explosion.cs" />
-    <Compile Include="Assets\Scripts\AnswerScript.cs" />
     <Compile Include="Assets\Scripts\FallDown\FallDown.cs" />
     <Compile Include="Assets\Scripts\FallDown\FallDownCoints.cs" />
+    <Compile Include="Assets\Scripts\FallDown\FallDownFonStars.cs" />
+    <Compile Include="Assets\Scripts\FallDown\FallDownFonStarsRight.cs" />
     <Compile Include="Assets\Scripts\FallDown\FallDownRocket.cs" />
     <Compile Include="Assets\Scripts\FallDown\FallDownStar.cs" />
     <Compile Include="Assets\Scripts\FallDown\FallDownStone.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Assets\Scripts\Record.cs" />
     <Compile Include="Assets\Scripts\RocketSpawnShot.cs" />
     <Compile Include="Assets\Scripts\RotateAroundPlanet.cs" />
+    <Compile Include="Assets\Scripts\SpawnObject\InstantinateStar.cs" />
     <Compile Include="Assets\Scripts\SpawnObject\SpawnBombs.cs" />
     <Compile Include="Assets\Scripts\SpawnObject\SpawnCoins.cs" />
     <Compile Include="Assets\Scripts\SpawnObject\SpawnMagnet.cs" />

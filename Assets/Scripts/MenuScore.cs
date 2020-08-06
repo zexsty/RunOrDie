@@ -9,6 +9,6 @@ public class MenuScore : MonoBehaviour
     void Start()
     {
         _text = GetComponentInChildren<TextMesh>();
-        _text.text = "Best Score: " + PlayerPrefs.GetInt("LastPoint", 0).ToString(); //Сохранение количества монет после выхода в главное меню
+        _text.text = ": " + PlayerPrefs.GetInt("LastPoint", 0).ToString(); //Сохранение количества монет после выхода в главное меню
     }
 }

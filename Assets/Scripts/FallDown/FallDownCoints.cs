@@ -24,7 +24,7 @@ public class FallDownCoints : MonoBehaviour
 
         transform.position -= new Vector3(0, fallSpeedCoin * Time.deltaTime, 0);// Объект будет лететь только по координате Y
  
-        if (PlayerController.magneto)
+        if (PlayerController.magneto )
         {
             transform.position = Vector3.MoveTowards(transform.position, _playerPoint.position, fallSpeedCoin * 0.05f);
         }

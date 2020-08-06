@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour {
         {
             immortal = true;
             aura.enabled = immortal; // Включает спрайт(щит) при взятии щита
-            yield return new WaitForSeconds(5.0f); // неуязвимость на 5 секунд
+            yield return new WaitForSeconds(15.0f); // неуязвимость на 15 секунд
             immortal = false;
             aura.enabled = immortal;
 
@@ -119,7 +119,7 @@ public class PlayerController : MonoBehaviour {
 
         public void SetScoreText()
         {
-            scoreText.text = "Score: " + score;
+            scoreText.text = ": " + score;
         }
     
 }
