@@ -90,7 +90,13 @@ public class PlayerController : MonoBehaviour {
             StartCoroutine(StarTime());
         }
 
-    }
+        if (other.tag == "rockdrop")
+        {
+            Destroy(other.gameObject);
+            rocket.rocketscore = true;
+        }
+
+        }
     IEnumerator StarTime() {
         SwapCoin = true;
         yield return new WaitForSeconds(6f);
