@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\FallDown\FallDownRocket.cs" />
     <Compile Include="Assets\Scripts\FallDown\FallDownStar.cs" />
     <Compile Include="Assets\Scripts\FallDown\FallDownStone.cs" />
+    <Compile Include="Assets\Scripts\fxcgnjsfgjnsfdgnmjsf.cs" />
     <Compile Include="Assets\Scripts\GameSettings.cs" />
     <Compile Include="Assets\Scripts\HatCollider.cs" />
     <Compile Include="Assets\Scripts\LoadLevel.cs" />
