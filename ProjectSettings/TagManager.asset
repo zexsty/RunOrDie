@@ -15,6 +15,7 @@ TagManager:
   - Stone
   - Hat
   - rockdrop
+  - ground
   layers:
   - Default
   - TransparentFX

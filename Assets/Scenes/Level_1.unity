@@ -1998,6 +1998,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 2344483771146634818, guid: e80286d42e302a740b7b7a4a317255e6,
+        type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     - target: {fileID: 2344483771146634812, guid: e80286d42e302a740b7b7a4a317255e6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2449,6 +2454,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 283705968, guid: 273273e9d37cbee4d9a95ab3c46053c8, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480511426, guid: 273273e9d37cbee4d9a95ab3c46053c8, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
