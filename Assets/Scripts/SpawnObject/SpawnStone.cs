@@ -7,6 +7,7 @@ public class SpawnStone : MonoBehaviour
     public GameObject Stone; // Объект Который будет спавнится 
     public BoxCollider2D StoneColl; // Коллайдер, если объекту нужно действие при косании с чем либо
 
+
     private void Awake()
     {
         StoneColl = GetComponent<BoxCollider2D>(); // Добавление компонента коллайдера на обьект
@@ -16,14 +17,16 @@ public class SpawnStone : MonoBehaviour
     {
        StartCoroutine(Spawn()); // пристарте запускается метод спавна Объектов
     }
+  
 
     IEnumerator Spawn() // Метод спавна объектов
     {
         while (!PlayerController.lose) // Цикл который выполняется пока игрок жив
         {
-            yield return new WaitForSeconds(Random.Range(30f, 60f)); // Задержка перед спавном объектов
+            yield return new WaitForSeconds(Random.Range(5, 15f)); // Задержка перед спавном объектов
             Instantiate(Stone, new Vector2(Random.Range(-2.85f, 2.85f), 5.521f), Quaternion.identity); // Первое - Это объект который будет спавнится, Второе - это это рандомное положение спавна(Координата от и до)
         }
 
     }
+
 }
