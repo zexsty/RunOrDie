@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other) {
 
 
-        if (other.gameObject.CompareTag("Bomb") && !immortal) //Если Попала бомба и не взят щит
+        if (other.gameObject.CompareTag("Bomb")|| other.gameObject.CompareTag("stbomb") && !immortal) //Если Попала бомба и не взят щит
         {
             other.gameObject.GetComponent<FallDown>().Exploud(); // Активация анимации взрыва
             lose = true;// Конец игры

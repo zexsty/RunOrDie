@@ -25,10 +25,7 @@ public class rocketvector : MonoBehaviour
         }
         time -= Time.deltaTime;
 
-        if (bomb == null)
-        {
-            Destroy(gameObject);
-        }
+      
         foreach (GameObject go in bomb)
         {
             float tmp2 = Vector3.Distance(transform.position, go.transform.position);

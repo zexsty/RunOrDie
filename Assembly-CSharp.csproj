@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\FallDown\FallDownCoints.cs" />
     <Compile Include="Assets\Scripts\FallDown\FallDownFonStars.cs" />
     <Compile Include="Assets\Scripts\FallDown\FallDownFonStarsRight.cs" />
+    <Compile Include="Assets\Scripts\FallDown\falldownrock.cs" />
     <Compile Include="Assets\Scripts\FallDown\FallDownRocket.cs" />
     <Compile Include="Assets\Scripts\FallDown\FallDownStar.cs" />
     <Compile Include="Assets\Scripts\FallDown\FallDownStone.cs" />
