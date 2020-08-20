@@ -12,6 +12,10 @@ public class FallDown : MonoBehaviour {
 			Destroy (gameObject); // Когда объект по координате "Y" -6f то объект будет уничтожен
 
 		transform.position -= new Vector3 (0, fallSpeed * Time.deltaTime, 0);// Объект будет лететь только по координате Y
+		if (transform.position.y < 0)
+		{
+			gameObject.tag = "stbomb";
+		}
 	}
     public void Exploud() {
         Explosion.gameObject.SetActive(true);// Включается анимация взрыва после прикосновения с игроком

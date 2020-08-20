@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3929585853854876104}
   - component: {fileID: 2967491897609519182}
   - component: {fileID: 9019087997025818387}
-  - component: {fileID: 7489301166175921798}
+  - component: {fileID: 2656287084703476196}
   m_Layer: 0
   m_Name: rocketdrop
   m_TagString: rockdrop
@@ -107,7 +107,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.99, y: 8.11}
   m_EdgeRadius: 0
---- !u!114 &7489301166175921798
+--- !u!114 &2656287084703476196
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,7 +116,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7988333196182673204}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d655c2afc55adf2419ac527b27ef1de5, type: 3}
+  m_Script: {fileID: 11500000, guid: 649d18749a66c2d4ea4caa34f6730c75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fallSpeed: 3

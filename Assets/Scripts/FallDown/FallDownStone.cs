@@ -15,7 +15,9 @@ public class FallDownStone : MonoBehaviour
         }
         if (transform.position.y < 2.0f)// Уничтожение обьекта бомы за границами экрана
             Destroy(gameObject, 5f);
-    }
+    
+   
+}
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "ground")
