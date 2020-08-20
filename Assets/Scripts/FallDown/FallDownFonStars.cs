@@ -6,6 +6,11 @@ public class FallDownFonStars : MonoBehaviour
 {
     private float FallSpeed = 5f;
 
+    private void Start()
+    {
+        FallSpeed = (Random.Range(2f, 8f));
+    }
+
     void Update()
     {
         if (transform.position.y < -6f)

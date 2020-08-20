@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class FallDownFonStarsRight : MonoBehaviour
 {
-    private float FallSpeed = 5f;
+    private float FallSpeed;
+
+    private void Start()
+    {
+        FallSpeed = (Random.Range(2f, 7f));
+    }
 
     void Update()
     {
         if (transform.position.y < -6f)
             Destroy(gameObject);
         
-        transform.position -= new Vector3(-FallSpeed * Time.deltaTime, FallSpeed * Time.deltaTime, 0);
+        transform.position -= new Vector3(-FallSpeed * Time.deltaTime, FallSpeed* Time.deltaTime, 0);
     }
 }
